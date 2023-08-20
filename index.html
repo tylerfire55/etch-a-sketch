@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Etch-a-Sketch</title>
 </head>
@@ -10,7 +13,9 @@
     <h1 class="title">Etch-a-Sketch</h1>
     <div class="body">
         <div class="settings">
-            <input type="color" class="colorPicker" value="#FFFFFF" />
+            <div class="colorTitle">Color:</div>
+            <input type="color" class="colorPicker" value="#FFFFFF">
+            <div class="sizeTitle">Grid Size:</div>
             <input type="text"  class="gridSize" />
         </div>
         <div class="grid"></div>

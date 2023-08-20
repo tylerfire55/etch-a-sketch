@@ -1,7 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: #333333;
+    background-color: #085a73;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 1em;
 }
 
 .body {
@@ -12,7 +15,8 @@
 .title {
     margin-top: 10px;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -21,14 +25,45 @@
     margin-right: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid {
     display: grid;
-    height: 500px;
-    width: 500px;
+    width: 70%;
+    aspect-ratio: 1/1;
 }
 
 .cell {
     background-color: black;
+}
+
+.colorTitle, .sizeTitle {
+    font-size: 1.5em;
+}
+
+.colorPicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 48px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 20px;
+}
+.colorPicker::-webkit-color-swatch {
+    border-radius: 50%;
+    border: none;
+}
+
+.colorPicker::-moz-color-swatch  {
+    border-radius: 50%;
+    border: none;
+}
+
+.gridSize {
+    width: 30px;
+    height: 30px;
 }

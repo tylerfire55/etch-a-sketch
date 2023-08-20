@@ -34,8 +34,9 @@ grid.addEventListener("mouseup", e => {mouseDown = false})
 
 
 //Accept user entry for grid size
-userInput.addEventListener("input", e => {
-    gridSize = userInput.value;
+userInput.addEventListener("keyup", e => {
+    gridSize = e.target.value;
+    gridCreate(gridSize);
 })
 
 //

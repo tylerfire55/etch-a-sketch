@@ -11,6 +11,7 @@ function gridCreate(gridSize) {
     for (let i = 0; i < (gridSize*gridSize); i++) {
         const cell = document.createElement("div");
         cell.classList.add("cell");
+        cell.style.backgroundColor = "";
         cell.addEventListener("mouseover", setColor);
         cell.addEventListener("mousedown", setColor);
         grid.appendChild(cell);
@@ -34,8 +35,9 @@ grid.addEventListener("mouseup", e => {mouseDown = false})
 
 
 //Accept user entry for grid size
-userInput.addEventListener("keyup", e => {
+userInput.addEventListener("mouseup", e => {
     gridSize = e.target.value;
+    grid.innerHTML = "";
     gridCreate(gridSize);
 })
 

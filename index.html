@@ -14,9 +14,18 @@
     <div class="body">
         <div class="settings">
             <div class="colorTitle">Color:</div>
-            <input type="color" class="colorPicker" value="#FFFFFF">
+            <div class="colorHolder">
+                <button class="colorButton">Color:</button>
+                <input type="color" class="colorPicker" value="#FFFFFF">
+            </div>
+            <div class="rainbowHolder">
+                <button class="rainbowButton">Rainbow</button>
+            </div>
+            <div class="shadowHolder">
+                <button class="shadowButton">Shadow</button>
+            </div>
             <div class="sizeTitle">Grid Size:</div>
-            <input type="text"  class="gridSize" />
+            <input type="range" min="8" max="100" value="16"  class="gridSize" />
         </div>
         <div class="grid"></div>
     </div>

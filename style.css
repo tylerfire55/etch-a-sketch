@@ -1,10 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: #085a73;
+    background-color: #3498db;
     font-family: "Roboto", sans-serif;
     color: white;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .body {
@@ -22,6 +22,7 @@
 
 .settings {
     margin-left: 10px;
+    width: 150px;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
@@ -31,13 +32,13 @@
 
 .grid {
     display: grid;
-    width: 70%;
+    width: 60%;
     max-width: 600px;
     aspect-ratio: 1/1;
 }
 
 .cell {
-    background-color: black;
+    background-color: white;
 }
 
 .colorTitle, .sizeTitle {
@@ -45,25 +46,42 @@
 }
 .colorHolder, .shadowHolder, .rainbowHolder {
     height: 100px;
-    width: 100px;
+    width: 160px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.colorButton, .rainbowButton, .shadowButton {
-    height: 20px;
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #085a73;
+    border-radius: 6px;
+    font-size: 1em;
 }
-
+button:hover{
+    background-color: white;
+    color: #085a73;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.rainbowImage {
+    height: 40px;
+}
+.shadowImage {
+    height: 39px;
+    margin: 1px;
+}
 .colorPicker {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 30px;
-    height: 33px;
+    width: 42px;
+    height: 45px;
     background-color: transparent 80%;
     border: none;
     padding: 0px;
-    margin-left: 10px;
 }
 .colorPicker::-webkit-color-swatch {
     border-radius: 50%;
@@ -77,4 +95,13 @@
 
 .gridSize {
     height: 30px;
+}
+
+
+.active {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: currentColor 4px solid;
+    box-shadow: 0 0 0.5em currentColor;
 }
